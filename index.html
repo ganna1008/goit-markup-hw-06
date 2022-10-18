@@ -351,7 +351,7 @@
         </address>
       </div>
       <div class="join">
-        <p class="join-text">приєднуйтесь</p>
+        <b class="join-text">приєднуйтесь</b>
         <ul class="join-list list">
           <li class="join-item">
             <a href="#" class="join-soc-link" aria-label="Instagram"><span class="visually-hidden">Instagram</span>
@@ -383,6 +383,17 @@
           </li>
         </ul>
       </div>
+      <div class="subscribe">
+        <b class="subscribe-text">Підпишіться на розсилку</b>
+        <div class="sub-group">
+          <input class="sub-input" type="email" name="email" placeholder="E-mail" autocomplete="email">
+          <button class="sub-button" type="submit">Підписатися
+            <svg class="sub-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-send"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
     </div>
   </footer>
   <div class="backdrop is-hidden" data-modal>
@@ -392,6 +403,28 @@
           <use href="./images/icons.svg#icon-close-modal"></use>
         </svg>
       </button>
+
+
+      <form class="form">
+        <h2 class="form-title">Залиште свої дані, ми вам передзвонимо</h2>
+        <label class="form-field">
+          <input type="text" class="form-input" name="name" placeholder=" ">
+          <span class="form-label">Ім'я</span>
+          <span class="form-icon"></span>
+        </label>
+
+        <label class="form-field">
+          <input type="tel" class="form-input" name="phone" placeholder=" ">
+          <span class="form-label">Телефон</span>
+          <span class="form-icon"></span>
+        </label>
+
+        <label class="form-field">
+          <input type="email" class="form-input" name="mail" placeholder=" ">
+          <span class="form-label">Пошта</span>
+          <span class="form-icon"></span>
+        </label>
+      </form>
     </div>
   </div>
   <script src="./js/modal.js"></script>

@@ -33,6 +33,7 @@ body {
   letter-spacing: 0.03em;
 }
 /* Rest */
+b,
 p,
 h1,
 h2,
@@ -234,6 +235,7 @@ img {
   border-radius: 4px;
   border-color: transparent;
   border-width: 0px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
   background-color: var(--accent-color);
   color: var(--light-title-text-color);
@@ -503,7 +505,9 @@ img {
   margin-left: 70px;
 }
 
-.join-text {
+.join-text,
+.subscribe-text {
+  display: block;
   margin-bottom: 20px;
 
   color: var(--light-title-text-color);
@@ -533,6 +537,63 @@ img {
 .join-soc-link:hover,
 .join-soc-link:focus {
   background-color: var(--accent-color);
+}
+
+.subscribe {
+  margin-left: 93px;
+}
+
+.sub-group {
+  display: flex;
+  gap: 12px;
+}
+
+.sub-input {
+  width: 358px;
+  padding: 15px 16px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+
+  background-color: transparent;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+}
+
+.sub-input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+}
+
+.sub-button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 28px;
+  border-radius: 4px;
+  border-color: transparent;
+  border-width: 0px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+  background-color: var(--accent-color);
+  color: var(--light-title-text-color);
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+
+  cursor: pointer;
+  transition: background-color var(--transition-time);
+}
+
+.sub-button:hover,
+.sub-button:focus {
+  background-color: var(--button-active-bgc);
 }
 /* Portfolio */
 
@@ -725,4 +786,17 @@ img {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
+}
+
+.form {
+  padding: 40px;
+  outline: 1px solid tomato;
+}
+
+.form-title {
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+
+  color: var(--dark-title-text-color);
 }
