@@ -893,6 +893,7 @@ img {
   align-items: center;
   justify-content: center;
   fill: transparent;
+  transition: background-color var(--transition-time), fill var(--transition-time);
 }
 
 .input-check:checked + .privacy-text .privacy-box {
