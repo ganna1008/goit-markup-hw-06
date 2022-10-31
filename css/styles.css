@@ -556,7 +556,7 @@ img {
   border-radius: 4px;
 
   background-color: transparent;
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--light-title-text-color);
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;
@@ -764,7 +764,7 @@ img {
 
   width: 30px;
   height: 30px;
-  /* padding: 0px; */
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -868,11 +868,18 @@ img {
 }
 
 .form-label {
+  display: block;
   margin-bottom: 4px;
 
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
+}
+
+.privacy {
+  width: max-content;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .privacy-text {
@@ -910,12 +917,14 @@ img {
 }
 
 .form-btn {
+  display: block;
   padding: 10px 52px;
   border-radius: 4px;
   border-color: transparent;
   border-width: 0px;
   margin-top: 30px;
-  margin-left: 124px;
+  margin-left: auto;
+  margin-right: auto;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
   background-color: var(--accent-color);
